@@ -3,7 +3,7 @@
 ## Kerbrute (<a href="https://github.com/ropnop/kerbrute">link</a>)
 ```bash
 # User enum
-kerbrute_linux_amd64 userenum -d lab.ropnop.com usernames.txt
+kerbrute_linux_amd64 userenum -d lab.ropnop.com /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt
 
 # Password spray
 kerbrute_linux_amd64 passwordspray --dc <dc ip> -d <domain> ./user.txt <password>
