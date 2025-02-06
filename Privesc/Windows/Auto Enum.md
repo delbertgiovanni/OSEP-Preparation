@@ -18,7 +18,7 @@ Invoke-BloodHound -CollectionMethod All -OutputDirectory C:\Users\stephanie\Desk
 bloodhound-python -d corp.com -u stephanie -p 'LegmanTeamBenzoin!!' -ns 192.168.207.70 -c all --zip
 ```
 
-## Winpeas (<a href="https://github.com/peass-ng/PEASS-ng/blob/master/winPEAS/winPEASexe/README.md"link</a>)
+## Winpeas (<a href="https://github.com/peass-ng/PEASS-ng/blob/master/winPEAS/winPEASexe/README.md">link</a>)
 ```bash
 Just download the binary and run it
 ```
