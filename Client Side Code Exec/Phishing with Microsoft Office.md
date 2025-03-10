@@ -227,8 +227,13 @@ Process Monitor reveals that no .cs file was written to the file system and su
 ![alt text](image-6.png)
 ## References
 https://www.depthsecurity.com/blog/obfuscating-malicious-macro-enabled-word-docs/
+<br>
 https://github.com/clr2of8/VBAstomp
+<br>
 https://woshub.com/using-powershell-behind-a-proxy/
+<br>
 https://stackoverflow.com/questions/14263359/access-web-using-powershell-and-proxy
+<br>
 https://cloudrun.co.uk/powershell/configuring-powershell-to-work-behind-a-proxy-server/
+<br>
 https://medium.com/river-yang/powershell-working-behind-a-proxy-with-authentication-eb68a337f222
